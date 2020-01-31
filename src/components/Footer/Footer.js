@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.scss';
+import '../App/App.scss';
 
 export default class Footer extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ export default class Footer extends Component {
 
     render() {
         return (
-            <div className="footer">
+            <div className="component footer">
                 <p>{this.state.text}</p>
             </div>
         );

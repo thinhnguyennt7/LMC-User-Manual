@@ -1,5 +1,6 @@
 import React,  { Component } from 'react';
 import './Chart.scss';
+import '../App/App.scss';
 
 export default class Chart extends Component {
     constructor(props) {
@@ -9,7 +10,9 @@ export default class Chart extends Component {
 
     render() {
         return (
-            <div></div>
+            <div className="component chart">
+                <h1>Chart Component</h1>
+            </div>
         );
     }
 }

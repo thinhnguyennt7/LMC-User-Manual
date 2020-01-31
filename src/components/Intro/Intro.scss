@@ -1,0 +1,55 @@
+.introView {
+    text-align: center;
+    .title {
+        font-size: 100px;
+        color: #405d86;
+        align-items: center;
+        margin-top: 7%;
+    }
+
+    .subtitle {
+        color: #f2f2f2;
+        font-size: 60px;
+        margin-top: -2%;
+        letter-spacing: 0.4rem;
+    }
+
+    & #intro {
+        font-size: 20px;
+    }
+}
+
+.scroll {
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    margin-left: -7rem;
+    width: 14rem;
+    height: auto;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #405d86;
+
+    svg {
+        margin: 0 2rem;
+    }
+
+    .arrow-1 {
+        position: relative;
+        z-index: 1;
+    }
+    .arrow-2 {
+        margin-top: -95%;
+    }
+
+    .fill-1 {
+        fill: #3E5678;
+    }
+
+    .fill-2 {
+        fill: #DA6895;
+    }
+}
