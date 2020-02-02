@@ -1,45 +1,34 @@
 import React, { Component } from 'react';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import TEXT from '../../en_us.json';
 import './Intro.scss';
 import '../App/App.scss';
+import recycleImage from '../../assets/recycle.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default class Intro extends Component {
 
-    Scroll = () => (
-        <div className='scroll'>
-            <p>{TEXT.INTRO.SCROLL_TEXT}</p>
-            <Parallax y={[-20, 20]} x={[5, 0]} className='arrow-1'>
-                <svg x='0px' y='0px' viewBox='0 0 167 299'>
-                    <polygon
-                        className='fill-1'
-                        points='120,0 75.5,145.9 29.6,0 '
-                    />
-                </svg>
-            </Parallax>
-            <Parallax y={[-20, 20]} className='arrow-2'>
-                <svg x='0px' y='0px' viewBox='0 0 167 299'>
-                    <polygon
-                        className='fill-2'
-                        points='137.4,0 83.5,145.9 29.6,0 '
-                    />
-                </svg>
-            </Parallax>
-        </div>
-    );
+    bannerView = () => <img className={'bannerSpec'} src={recycleImage}></img>
 
-    ScrollSVGView = () => (
-        <ParallaxProvider>
-            <this.Scroll/>
-        </ParallaxProvider>
+    welcomeMessage = () => (
+        <div className='welcomeMessageView'>
+            <h1 id='title'>{TEXT.INTRO.HEADER}</h1>
+            <h2 id='subtitle'>{TEXT.INTRO.SUBTITLE}</h2>
+            <h3 id='solutionQuote'>{'Need a Short Solution Quote'}</h3>
+        </div>
     );
 
     render() {
         return (
             <div className='introView'>
-                <h1 className='title'>{TEXT.INTRO.HEADER}</h1>
-                <h2 className='subtitle'>{TEXT.INTRO.SUBTITLE}</h2>
-                <this.ScrollSVGView/>
+                <Row>
+                    <Col sm={7}>
+                        <this.welcomeMessage />
+                    </Col>
+                    <Col sm={5}>
+                        <this.bannerView />
+                    </Col>
+                </Row>
             </div>
         );
     };

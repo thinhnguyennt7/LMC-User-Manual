@@ -1,13 +1,18 @@
 body {
   // position: relative;
   background-color: #f2eedd;
-  background-image: linear-gradient(to bottom, #A0E8F5 0%, #ffecd2 100%);
+  background-image: linear-gradient(to bottom, #C2E2B5 0%, #FFE5C1 100%);
   height: 400rem;
   min-height: 300vh;
   font-family: 'futura-pt', Futura, Helvetica, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
   // display: flex;
   // align-items: center;
   // justify-content: center;
+}
+
+.main {
+  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {

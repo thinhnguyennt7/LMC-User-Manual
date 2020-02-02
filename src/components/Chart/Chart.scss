@@ -1,0 +1,18 @@
+.chartView {
+    margin: 13% 10% 0% 10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    .question {
+        font-weight: 300;
+        line-height: 1.5;
+        animation-delay: 0.2s;
+        animation-name: slideInLeft;
+    }
+
+    & #quote {
+        font-size: 3.5vw;
+        margin-top: 8%;
+        font-weight: bold;
+    }
+}
