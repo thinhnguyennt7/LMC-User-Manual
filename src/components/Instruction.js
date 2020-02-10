@@ -18,6 +18,12 @@ export default class Instruction extends Component {
         <div></div>
     );
 
+    instructionStepView = () => (
+        <div>
+            <h3 id='titleSpec'>Steps Procedure</h3>
+        </div>
+    );
+
     solutionTextView = () => (
         <div className='intructionView'>
             <div className='topSolutionView'>
@@ -29,6 +35,7 @@ export default class Instruction extends Component {
                 <h3 id='titleSpec'>{TEXT.INSTRUCTION.THREE_D}</h3>
                 <p id='quote'>{'3D Model + Animation will insert here ....'}</p>
                 <this.threeDModelView />
+                <this.instructionStepView />
             </div>
         </div>
     );

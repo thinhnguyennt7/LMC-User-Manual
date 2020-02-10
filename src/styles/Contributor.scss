@@ -1,14 +1,15 @@
 .contributorView {
-    margin-top: 12%;
+    margin-top: 8%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 12%;
 
     & #titleSpec {
         font-size: 1.5vw;
         font-weight: bold;
         letter-spacing: 0.3rem;
-        margin-left: 12%;
     }
 
     .membersView {
-        
+
     }
 }

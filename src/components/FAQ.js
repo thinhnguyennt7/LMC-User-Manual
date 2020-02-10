@@ -8,9 +8,15 @@ export default class FAQ extends Component {
         this.state = {  };
     }
 
+    QandAView = () => (
+        <div className='qandAView'>
+            <h3 id='titleSpec'>FAQ/Troubleshooting</h3>
+        </div>
+    );
+
     render() {
         return (
-            <div></div>
+            <this.QandAView />
         );
     }
 };

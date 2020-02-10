@@ -1,0 +1,11 @@
+.qandAView {
+    margin-top: 8%;
+    margin-left: 12%;
+    font-family: 'Roboto', sans-serif;
+
+    & #titleSpec {
+        font-size: 1.5vw;
+        font-weight: bold;
+        letter-spacing: 0.3rem;
+    }
+}

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import ReactTypingEffect from 'react-typing-effect';
+import { Row, Col } from 'react-bootstrap';
+import { Fade } from 'react-reveal';
 import TEXT from '../en_us.json';
 import recycleImage from '../assets/recycle.png';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import '../styles/Home.scss';
 
 export default class Home extends Component {
@@ -11,22 +12,30 @@ export default class Home extends Component {
 
     welcomeMessage = () => (
         <div className='welcomeMessageView'>
-            <h1 id='title'>{TEXT.HOME_PAGE.HEADER}</h1>
-            <h2 id='subtitle'>{TEXT.HOME_PAGE.SUBTITLE}</h2>
-            <h3 id='solutionQuote'>{'Need a Short Solution Quote'}</h3>
+            <Fade top delay={300}><h1 id='title'>{TEXT.HOME_PAGE.HEADER}</h1></Fade>
+            <Fade top delay={500}><h2 id='subtitle'>{TEXT.HOME_PAGE.SUBTITLE}</h2></Fade>
+            <this.typingMessageIntro />
         </div>
+    );
+
+    typingMessageIntro = () => (
+        <Fade top delay={800}>
+            <ReactTypingEffect
+                className='solutionQuote'
+                speed='200'
+                eraseDelay='2000'
+                typingDelay='1200'
+                text={[TEXT.HOME_PAGE.FIRST_TEXT, TEXT.HOME_PAGE.SECOND_TEXT]}
+            />
+        </Fade>
     );
 
     render() {
         return (
             <div className='homeView'>
                 <Row>
-                    <Col sm={7}>
-                        <this.welcomeMessage />
-                    </Col>
-                    <Col sm={5}>
-                        <this.bannerView />
-                    </Col>
+                    <Col sm={7}><this.welcomeMessage/></Col>
+                    <Col sm={5}><this.bannerView/></Col>
                 </Row>
             </div>
         );
