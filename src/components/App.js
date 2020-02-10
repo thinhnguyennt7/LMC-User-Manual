@@ -1,18 +1,18 @@
 import React, { Component, Fragment } from 'react';
-import Footer from '../Footer/Footer';
-import Intro from '../Intro/Intro';
-import Model from '../3D-Model/Model';
-import Chart from '../Chart/Chart';
-import './App.scss';
+import Contributor from './Contributor';
+import Home from './Home';
+import Intruction from './Instruction';
+import Technical from './Technical';
+import '../styles/App.scss';
 
 export default class App extends Component {
 
   mainViewRender = () => (
     <div className='main'>
-      <Intro />
-      <Chart />
-      <Model />
-      <Footer />
+      <Home />
+      <Technical />
+      <Intruction />
+      <Contributor />
     </div>
   );
 

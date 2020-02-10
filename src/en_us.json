@@ -1,15 +1,15 @@
 {
-    "INTRO": {
+    "HOME_PAGE": {
         "HEADER": "Pipeline Recycling System (PReS)",
         "SUBTITLE": "Team Borgs",
         "SCROLL_TEXT": "Scroll"
     },
-    "CHART": {
+    "TECHNICAL": {
         "QUESTION": "How much wastes produces in the past few years?",
         "FIRST_QUOTE": "In 2015, an estimated 55 percent of global plastic waste was discarded, 25 percent was incinerated, and 20 percent recycled",
         "SECOND_QUOTE": "The garbage output at Georgia Tech has been increasing at a warning rate for the past couple of years."
     },
-    "MODEL": {
+    "INSTRUCTION": {
         "ALT": "PReS Working Cycle",
         "QUESTION": "How does PReS operate?",
         "THREE_D": "3D Model + Simulator",
@@ -17,7 +17,7 @@
         "SOLUTION": "The waste will be collected everywhere on campus and then it will be distributed to facilities.",
         "PROGRESS": "Garbage collection, classification, pre-processing, transportation, and main processing."
     },
-    "FOOTER": {
+    "CONTRIBUTOR": {
         "TITLE": "Our Team",
         "CONTRIBUTORS": "Contributors"
     }

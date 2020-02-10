@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import TEXT from '../../en_us.json';
-import './Footer.scss';
-import '../App/App.scss';
+import TEXT from '../en_us.json';
+import '../styles/Contributor.scss';
+import '../styles/App.scss';
 
-export default class Footer extends Component {
+export default class Contributor extends Component {
 
     membersView = () => (
         <div className='membersView'>
@@ -12,12 +12,12 @@ export default class Footer extends Component {
     );
 
     titleView = () => (
-        <h3 id='titleSpec'>{TEXT.FOOTER.CONTRIBUTORS}</h3>
+        <h3 id='titleSpec'>{TEXT.CONTRIBUTOR.CONTRIBUTORS}</h3>
     );
 
     render() {
         return (
-            <div className='footerView'>
+            <div className='contributorView'>
                 <this.titleView />
                 <this.membersView />
             </div>

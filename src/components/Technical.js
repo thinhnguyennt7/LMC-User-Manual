@@ -1,9 +1,9 @@
 import React,  { Component } from 'react';
-import TEXT from '../../en_us.json';
-import './Chart.scss';
-import '../App/App.scss';
+import TEXT from '../en_us.json';
+import '../styles/Technical.scss';
+import '../styles/App.scss';
 
-export default class Chart extends Component {
+export default class Technical extends Component {
     constructor(props) {
         super(props);
         this.state = {  };
@@ -11,8 +11,8 @@ export default class Chart extends Component {
 
     quoteTextView = () => (
         <div>
-            <h1 id='quote'>{TEXT.CHART.FIRST_QUOTE}</h1>
-            <h1 id='quote'>{TEXT.CHART.SECOND_QUOTE}</h1>
+            <h1 id='quote'>{TEXT.TECHNICAL.FIRST_QUOTE}</h1>
+            <h1 id='quote'>{TEXT.TECHNICAL.SECOND_QUOTE}</h1>
         </div>
     );
 
@@ -24,7 +24,7 @@ export default class Chart extends Component {
 
     render() {
         return (
-            <div className='chartView'>
+            <div className='technicalView'>
                 <this.quoteTextView />
                 <this.chartView />
             </div>

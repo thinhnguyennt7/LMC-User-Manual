@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import TEXT from '../../en_us.json';
-import './Intro.scss';
-import '../App/App.scss';
-import recycleImage from '../../assets/recycle.png';
+import TEXT from '../en_us.json';
+import recycleImage from '../assets/recycle.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import '../styles/Home.scss';
+import '../styles/App.scss';
 
-export default class Intro extends Component {
+export default class Home extends Component {
 
     bannerView = () => <img className={'bannerSpec'} src={recycleImage}></img>
 
     welcomeMessage = () => (
         <div className='welcomeMessageView'>
-            <h1 id='title'>{TEXT.INTRO.HEADER}</h1>
-            <h2 id='subtitle'>{TEXT.INTRO.SUBTITLE}</h2>
+            <h1 id='title'>{TEXT.HOME_PAGE.HEADER}</h1>
+            <h2 id='subtitle'>{TEXT.HOME_PAGE.SUBTITLE}</h2>
             <h3 id='solutionQuote'>{'Need a Short Solution Quote'}</h3>
         </div>
     );
 
     render() {
         return (
-            <div className='introView'>
+            <div className='homeView'>
                 <Row>
                     <Col sm={7}>
                         <this.welcomeMessage />
