@@ -1,0 +1,18 @@
++ Homepage
+    - Provide image of the prototype.
+        - Attractive graphic, text, anything that help user understand the novumn
+        - Why the machine has that name
++ Technical
+    - General Audience -> Explain the science fiction how that allow the novumn work
+    - Extrapolate from real scientific laws, processes and technologies and your technical description
+        therefore reflect ints origin in material reality.
+    - Contain mix of images (charts, graphs, pictures, graphics, text) -> will allow user to easily understand
+    - Explain how all parts of the machine work
++ Instruction
+    - Combination of pictures and images, -> step by step instructions for users on how to operate your novumn
+    - Video, paper instruction, a quick start inforgraphic, or any other form that is best suited for readers
+        to operate your new technology
++ FAQ/Troubleshooting Tips
+    - Common questions or issues that users will have about using your novumn
+    - Provide answer.
+    - Creativity and imagination are important here.

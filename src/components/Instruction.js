@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
-import '../styles/App.scss';
 
 export default class Instruction extends Component {
     constructor(props) {

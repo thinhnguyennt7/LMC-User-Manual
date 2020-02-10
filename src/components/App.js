@@ -3,6 +3,7 @@ import Contributor from './Contributor';
 import Home from './Home';
 import Intruction from './Instruction';
 import Technical from './Technical';
+import FAQ from './FAQ';
 import '../styles/App.scss';
 
 export default class App extends Component {
@@ -12,6 +13,7 @@ export default class App extends Component {
       <Home />
       <Technical />
       <Intruction />
+      <FAQ />
       <Contributor />
     </div>
   );

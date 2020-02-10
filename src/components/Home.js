@@ -4,7 +4,6 @@ import recycleImage from '../assets/recycle.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../styles/Home.scss';
-import '../styles/App.scss';
 
 export default class Home extends Component {
 

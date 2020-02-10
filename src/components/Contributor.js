@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import TEXT from '../en_us.json';
 import '../styles/Contributor.scss';
-import '../styles/App.scss';
 
 export default class Contributor extends Component {
 
