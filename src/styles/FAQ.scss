@@ -1,11 +1,41 @@
-.qandAView {
+@import '../index';
+
+.content {
     margin-top: 8%;
     margin-left: 12%;
-    font-family: 'Roboto', sans-serif;
+    margin-right: 12%;
 
     & #titleSpec {
         font-size: 1.5vw;
         font-weight: bold;
         letter-spacing: 0.3rem;
+        font-family: $pragati-narrow;
+    }
+
+    .expansionView {
+        width: 100%;
+        margin-right: 12%;
+        margin-top: 3%;
+
+        .expansionItemColor {
+            background-color: $card-bg-color;
+            .answerText {
+                text-align: left;
+                color: $comment-txt-color;
+                font-size: 1.1vw;
+            }
+        }
+
+        .heading {
+            font-size: 1.3vw;
+            font-weight: bold;
+            color: $orange-color;
+        }
+
+        .content {
+            font-size: 15px;
+            font-weight: 100;
+            color: $comment-txt-color;
+        }
     }
 }

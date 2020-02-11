@@ -1,6 +1,6 @@
 {
     "HOME_PAGE": {
-        "HEADER": "Pipeline Recycling System (PReS)",
+        "HEADER": "Pipeline Recycling System",
         "SUBTITLE": "Team Borgs",
         "SCROLL_TEXT": "Scroll",
         "FIRST_TEXT": "Need a short solution quote!",
@@ -19,7 +19,18 @@
         "THREE_D": "3D Model + Simulator",
         "FIRST_TITLE": "Solution",
         "SOLUTION": "The waste will be collected everywhere on campus and then it will be distributed to facilities.",
-        "PROGRESS": "Garbage collection, classification, pre-processing, transportation, and main processing."
+        "PROGRESS": "Garbage collection, classification, pre-processing, transportation, and main processing.",
+        "PRES": "PreS Operation",
+        "PROCEDURE": "Steps Procedure",
+        "COLLECT_TRASH": "Each of the garbage bin is attached to a pipeline which then drains the garbage from the bin periodically. This implies that the bin has virtually infinite capacity. This helps avoid scenarios where the bin is full and overflow as we have seen often around GT.",
+        "CLASSIFICATION": "Computer Vision and Elemental Analysis will be used to classify waste to a specific category. Computer Vision mechanism will be used to recognize objects, for example an apple. Objects that will need more information for classification will go through Elemental Analysis where their chemical composition will be determined.",
+        "PRE_PROCESSING": "Modify non-qualified objects to correct formats before entering transportation pipelines. Pre-processing can be, for example, chopping objects, changing shapes, dividing different parts apart, or cleaning surfaces.",
+        "TRANSPORTATION": "Waste will be transported to destination using underground pipelines. Pipelines will have a self cleaning mechanism to prevent contamination and odor. Chemicals to clean pipelines will be created in the facility using waste and then released to pipelines at the scheduled time when there will be no trash in the pipeline.",
+        "FACILITY": "Different types of trash will be sent to different facilities on campus. There are three types of facilities: (Energy Facility, Materialistic Facility, Composting Facility)",
+        "FINAL_PRODUCT": "The outcome of this system is that we will be able to efficiently reuse or convert the trash into different forms of material that matter in other places. This improves the efficiency of recyclable material and also helps GT to achieve the goal of being self-sustaining. The excess product can be sold for profit or donated."
+    },
+    "FAQ": {
+        "TITLE": "FAQ/Troubleshooting"
     },
     "CONTRIBUTOR": {
         "TITLE": "Our Team",

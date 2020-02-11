@@ -1,18 +1,44 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap');
+
+// Color Variables
+$bg-color: #121212;
+$card-bg-color: #2E2E2E;
+$orange-color: #FFC58A;
+$white-color: #FFFFFF;
+$comment-txt-color: #F2F2F2;
+
+// Font Variables
+$passion-one: 'Passion One', cursive;
+$pragati-narrow: 'Pragati Narrow', sans-serif;
+
 body {
-  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  //   sans-serif;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f2eedd;
-  background-image: linear-gradient(to bottom, #C2E2B5 0%, #FFE5C1 100%);
+  background-color: $bg-color;
+  // background-image: linear-gradient(to bottom, #C2E2B5 0%, #FFE5C1 100%);
   height: 400rem;
   min-height: 300vh;
-  font-family: 'futura-pt', Futura, Helvetica, sans-serif;
+  font-family: $passion-one;
   -webkit-font-smoothing: subpixel-antialiased;
-}
+  color: $white-color;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .content {
+    margin-left: 12%;
+    & #headerTitle {
+      font-size: 1.8vw;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+      margin-top: 10%;
+      font-family: $pragati-narrow;
+    }
+
+    & #contentStyle {
+      margin-top: 1%;
+      font-size: 3.5vw;
+      font-weight: bold;
+      font-size: 4.0vw;
+    }
+  }
 }

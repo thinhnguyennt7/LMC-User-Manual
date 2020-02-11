@@ -12,8 +12,8 @@ export default class Home extends Component {
 
     welcomeMessage = () => (
         <div className='welcomeMessageView'>
-            <Fade top delay={300}><h1 id='title'>{TEXT.HOME_PAGE.HEADER}</h1></Fade>
-            <Fade top delay={500}><h2 id='subtitle'>{TEXT.HOME_PAGE.SUBTITLE}</h2></Fade>
+            <Fade side delay={400}><h1 id='title'>{TEXT.HOME_PAGE.HEADER}</h1></Fade>
+            <Fade side delay={600}><h2 id='subtitle'>{TEXT.HOME_PAGE.SUBTITLE}</h2></Fade>
             <this.typingMessageIntro />
         </div>
     );

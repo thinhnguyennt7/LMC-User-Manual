@@ -1,35 +1,14 @@
+@import '../index';
+
 .technicalView {
-    margin: 13% 10% 0% 10%;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
 
-    .question {
-        font-weight: 300;
-        line-height: 1.5;
-        animation-delay: 0.2s;
-        animation-name: slideInLeft;
-    }
-
-    & #quote {
-        font-size: 3.5vw;
-        margin-top: 10%;
-        font-weight: bold;
-    }
-
-    .approachView {
-        text-align: left;
-        margin-left: 2%;
-        & #titleSpec {
-            font-size: 1.5vw;
-            font-weight: bold;
-            letter-spacing: 0.3rem;
+    .backgroundView {
+        margin: 13% 10% 0% 10%;
+        & #quote {
+            font-size: 75px;
             margin-top: 10%;
-        }
-
-        & #approachSpec {
-            margin-top: 1%;
-            font-size: 3.5vw;
             font-weight: bold;
+            text-align: center;
         }
     }
 }
