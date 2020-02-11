@@ -29,7 +29,7 @@ export default class Contributor extends Component {
                     <h2>Senior</h2>
                 </Col>
                 <Col sm={3}>
-                    <h1 id='name'>Mai Phan</h1>
+                    <h1 id='name'>Mai Pham</h1>
                     <img src={Profile}></img>
                     <h2 id='major'>Computer Science</h2>
                     <h2>Senior</h2>

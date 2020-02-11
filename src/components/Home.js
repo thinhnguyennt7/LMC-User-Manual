@@ -34,8 +34,8 @@ export default class Home extends Component {
         return (
             <div className='homeView'>
                 <Row>
-                    <Col sm={7}><this.welcomeMessage/></Col>
-                    <Col sm={5}><this.bannerView/></Col>
+                    <Col sm={5}><this.welcomeMessage/></Col>
+                    <Col sm={7}><this.bannerView/></Col>
                 </Row>
             </div>
         );

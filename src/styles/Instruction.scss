@@ -7,8 +7,10 @@
         .cycle-chart {
             display: flex;
             margin: 0 auto;
-            width: 650px;
-            height: 650px;
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            max-height: 650px;
         }
 
         .proceduresView {
