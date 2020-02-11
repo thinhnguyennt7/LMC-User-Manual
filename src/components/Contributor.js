@@ -39,18 +39,18 @@ export default class Contributor extends Component {
     );
 
     titleView = () => (
-        <div className='content'>
-            <h3 id='headerTitle'>{TEXT.CONTRIBUTOR.CONTRIBUTORS}</h3>
-        </div>
+        <Fade bottom duration={2000}>
+            <div className='content'>
+                <h3 id='headerTitle'>{TEXT.CONTRIBUTOR.CONTRIBUTORS}</h3>
+            </div>
+        </Fade>
     );
 
     render() {
         return (
             <div className='contributorView'>
-                <Fade bottom duration={2000}>
-                    <this.titleView />
-                    <this.membersView />
-                </Fade>
+                <this.titleView />
+                <this.membersView />
             </div>
         );
     }
