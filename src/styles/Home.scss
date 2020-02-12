@@ -1,28 +1,30 @@
 @import'../index.scss';
 $navy-blue: #405d86;
 .homeView {
-    margin-top: 5%;
+    margin-top: 12%;
     .bannerSpec {
-        width: 100%;
-        max-width: 1250px;
-        height: 100%;
-        max-height: 700px;
+        width: 130%;
+        max-width: 1350px;
+        height: 120%;
+        max-height: 800px;
+        margin: -8% 0 0 -13%;
     }
 
     .welcomeMessageView {
         text-align: center;
         & #title {
-            margin-left: 10px;
+            margin-left: 5%;
             font-size: 5.8vw;
             color: $orange-color;
-            margin-top: 20%;
+            margin-top: 15%;
             animation-delay: 0.2s;
             animation-name: slideInLeft;
         }
         & #subtitle {
             color: $comment-txt-color;
-            font-size: 50px;
+            font-size: 40px;
             margin-top: -5px;
+            margin-left: 5%;
             letter-spacing: 0.4rem;
             font-family: $pragati-narrow;
         }
@@ -30,6 +32,7 @@ $navy-blue: #405d86;
         .solutionQuote {
             font-weight: lighter;
             font-size: 30px;
+            margin-left: 5%;
             color: $comment-txt-color;
             font-family: $pragati-narrow;
         }
