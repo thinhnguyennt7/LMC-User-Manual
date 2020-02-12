@@ -12,27 +12,27 @@ export default class Contributor extends Component {
             <Row className='row'>
                 <Col className='styleColumn roundCorner' sm={3}>
                     <h1 id='name'>Thinh Nguyen</h1>
-                    <img src={Profile}></img>
+                    <img id='profilePic' src={Profile}></img>
                     <h2 id='major'>Computer Science</h2>
-                    <h2>Senior</h2>
+                    <h2 id='year'>Senior</h2>
                 </Col>
                 <Col sm={3}>
                     <h1 id='name'>Lan Le Tu</h1>
-                    <img src={Profile}></img>
+                    <img id='profilePic' src={Profile}></img>
                     <h2 id='major'>Computer Science</h2>
-                    <h2>Senior</h2>
+                    <h2 id='year'>Senior</h2>
                 </Col>
                 <Col className='styleColumn roundCorner' sm={3}>
                     <h1 id='name'>Trai Tran</h1>
-                    <img src={Profile}></img>
+                    <img id='profilePic' src={Profile}></img>
                     <h2 id='major'>Computer Science</h2>
-                    <h2>Senior</h2>
+                    <h2 id='year'>Senior</h2>
                 </Col>
                 <Col sm={3}>
                     <h1 id='name'>Mai Pham</h1>
-                    <img src={Profile}></img>
+                    <img id='profilePic' src={Profile}></img>
                     <h2 id='major'>Computer Science</h2>
-                    <h2>Senior</h2>
+                    <h2 id='year'>Senior</h2>
                 </Col>
             </Row>
         </div>
