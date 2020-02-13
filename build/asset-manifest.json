@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.edeccf20.chunk.css",
+    "main.js": "/static/js/main.5374df87.chunk.js",
+    "main.js.map": "/static/js/main.5374df87.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.569c5e27.js",
+    "runtime-main.js.map": "/static/js/runtime-main.569c5e27.js.map",
+    "static/js/2.7561529f.chunk.js": "/static/js/2.7561529f.chunk.js",
+    "static/js/2.7561529f.chunk.js.map": "/static/js/2.7561529f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d671c117e6205da07e46339e37846b74.js": "/precache-manifest.d671c117e6205da07e46339e37846b74.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.edeccf20.chunk.css.map": "/static/css/main.edeccf20.chunk.css.map",
+    "static/js/2.7561529f.chunk.js.LICENSE": "/static/js/2.7561529f.chunk.js.LICENSE",
+    "static/media/PReS-Cycle.png": "/static/media/PReS-Cycle.e3938558.png",
+    "static/media/recycle.png": "/static/media/recycle.c7298dfb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.569c5e27.js",
+    "static/js/2.7561529f.chunk.js",
+    "static/css/main.edeccf20.chunk.css",
+    "static/js/main.5374df87.chunk.js"
+  ]
+}
