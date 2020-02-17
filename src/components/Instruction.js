@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
+import { STLViewer } from 'react-stl-obj-viewer';
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
+import FileUrl from 'file-url';
 
 export default class Instruction extends Component {
     constructor(props) {
@@ -15,10 +17,31 @@ export default class Instruction extends Component {
         <img className='cycle-chart' src={Cycle} alt={TEXT.INSTRUCTION.ALT}></img>
     );
 
+    handleFiles = filePath => {
+        const parts = [new Blob([filePath], {type: 'file'}), new Uint16Array([33])];
+        const file = new File(parts, 'test.STL', {type:"file"});
+        const reader = new FileReader();
+        return reader.readAsArrayBuffer(file);
+    }
+
+    threeDView = () => (
+        <STLViewer
+            className='threedView'
+            url='https://bohdanbirdie.github.io/stl-obj-demo/bottle.stl'
+            // file={this.handleFiles('../assets/facility.STL')}
+            modelColor="#FFC58A"
+            width={600} height={600}
+            backgroundColor='#121212'
+            orbitControls={true}
+            rotate={true}
+            rotationSpeeds={[0.01, 0.01, 0]}
+        />
+    );
+
     threeDModelView = () => (
-        <Fade bottom duration={1500}>
+        <Fade bottom duration={1500} >
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.THREE_D}</h3>
-            <p id='contentStyle'>{'3D Model + Animation will insert here ....'}</p>
+            <this.threeDView/>
         </Fade>
     );
 

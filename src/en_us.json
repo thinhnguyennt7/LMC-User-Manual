@@ -30,7 +30,21 @@
         "FINAL_PRODUCT": "The outcome of this system is that we will be able to efficiently reuse or convert the trash into different forms of material that matter in other places. This improves the efficiency of recyclable material and also helps GT to achieve the goal of being self-sustaining. The excess product can be sold for profit or donated."
     },
     "FAQ": {
-        "TITLE": "FAQ/Troubleshooting"
+        "TITLE": "FAQ/Troubleshooting",
+        "QUESTION1_TITLE": "How does the system operate?",
+        "QUESTION1_ANS": "",
+        "QUESTION2_TITLE": "What is cost-effective?",
+        "QUESTION2_ANS": "",
+        "QUESTION3_TITLE": "Does it affect nature?",
+        "QUESTION3_ANS": "",
+        "QUESTION4_TITLE": "How long does it take to build the system?",
+        "QUESTION4_ANS": "",
+        "QUESTION5_TITLE": "What kind of plastic can I recycle on campus?",
+        "QUESTION5_ANS": "You can recycle rigid plastic bottles and containers. Make sure the bottle or container is empty prior to recycling. Please rinse off any food residue. No plastic bags, plastic film, or polystyrene foam.",
+        "QUESTION6_TITLE": "Can I recycle plastic bags from the grocery store?  What if it has the number two on the bag?",
+        "QUESTION6_ANS": "We do not recycle plastic bags or any type of plastic film. Our vendors only accept rigid plastic bottles and containers, because plastic bags, wrap and film damage their equipment.",
+        "QUESTION7_TITLE": "What about paper towels and tissues?",
+        "QUESTION7_ANS": "We do not recycle paper towels, tissues, or any type of food contaminated paper.  Place them in the trash can."
     },
     "CONTRIBUTOR": {
         "TITLE": "Our Team",

@@ -51,21 +51,31 @@ export default class FAQ extends Component {
 
 const questionsAndAnswers = [
     {
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-        title: 'How the system operate?'
+        text: TEXT.FAQ.QUESTION1_ANS,
+        title: TEXT.FAQ.QUESTION1_TITLE
     },
     {
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-        title: 'What are costs effective?'
+        text: TEXT.FAQ.QUESTION2_ANS,
+        title: TEXT.FAQ.QUESTION2_TITLE
     },
     {
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-        title: 'Does it affect the nature?'
-    },{
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-        title: 'How long it takes build the system?'
-    }, {
-        text: 'To be updated',
-        title: 'Need to add more Q&A questions'
+        text: TEXT.FAQ.QUESTION3_ANS,
+        title: TEXT.FAQ.QUESTION3_TITLE
+    },
+    {
+        text: TEXT.FAQ.QUESTION4_ANS,
+        title: TEXT.FAQ.QUESTION4_TITLE
+    },
+    {
+        text: TEXT.FAQ.QUESTION5_ANS,
+        title: TEXT.FAQ.QUESTION5_TITLE
+    },
+    {
+        text: TEXT.FAQ.QUESTION6_ANS,
+        title: TEXT.FAQ.QUESTION6_TITLE
+    },
+    {
+        text: TEXT.FAQ.QUESTION7_ANS,
+        title: TEXT.FAQ.QUESTION7_TITLE
     }
 ];
