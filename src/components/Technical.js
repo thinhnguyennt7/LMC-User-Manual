@@ -38,7 +38,6 @@ export default class Technical extends Component {
         return (
             <div className='technicalView'>
                 <this.quoteTextView />
-                <this.chartView />
                 <this.newSolutionView />
             </div>
         );
