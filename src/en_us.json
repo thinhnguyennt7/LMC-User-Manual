@@ -2,9 +2,10 @@
     "HOME_PAGE": {
         "HEADER": "Pipeline Recycling System",
         "SUBTITLE": "Team Borgs",
-        "SCROLL_TEXT": "Scroll",
-        "FIRST_TEXT": "Need a short solution quote!",
-        "SECOND_TEXT": "To be updated...."
+        "FIRST_TEXT": "New Technology",
+        "SECOND_TEXT": "Better Life",
+        "THIRD_TEXT": "Better World",
+        "FOURTH_TEXT": "Better People !!!"
     },
     "TECHNICAL": {
         "QUESTION": "How much wastes produces in the past few years?",

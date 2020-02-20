@@ -1,5 +1,6 @@
 import React,  { Component } from 'react';
 import { Fade } from 'react-reveal';
+import { Row } from 'react-bootstrap';
 import TEXT from '../en_us.json';
 import '../styles/Technical.scss';
 import '../index.scss';
@@ -21,7 +22,12 @@ export default class Technical extends Component {
         <div className='content'>
             <Fade bottom duration={2000}>
                 <h3 id='headerTitle'>{TEXT.TECHNICAL.SECTION_TITLE}</h3>
-                <p id='contentStyle'>{TEXT.TECHNICAL.APPROACH}</p>
+                <p className='center' id='contentStyle'>{TEXT.TECHNICAL.APPROACH}</p>
+                <Row>
+                    <div className='sketch'>
+                        <p>SKETCH DRAFT NEED TO ADD HERE</p>
+                    </div>
+                </Row>
             </Fade>
         </div>
     );

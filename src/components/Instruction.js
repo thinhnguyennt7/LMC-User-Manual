@@ -25,17 +25,19 @@ export default class Instruction extends Component {
     }
 
     threeDView = () => (
-        <STLViewer
-            className='threedView'
-            url='https://bohdanbirdie.github.io/stl-obj-demo/bottle.stl'
-            // file={this.handleFiles('../assets/facility.STL')}
-            modelColor="#FFC58A"
-            width={600} height={600}
-            backgroundColor='#121212'
-            orbitControls={true}
-            rotate={true}
-            rotationSpeeds={[0.01, 0.01, 0]}
-        />
+        <Row>
+            <STLViewer
+                className='threedView'
+                url='https://bohdanbirdie.github.io/stl-obj-demo/bottle.stl'
+                // file={this.handleFiles('../assets/facility.STL')}
+                modelColor="#FFC58A"
+                width={600} height={600}
+                backgroundColor='#121212'
+                orbitControls={true}
+                rotate={true}
+                rotationSpeeds={[0.01, 0.01, 0]}
+            />
+        </Row>
     );
 
     threeDModelView = () => (
@@ -48,7 +50,11 @@ export default class Instruction extends Component {
     instructionStepView = () => (
         <Fade bottom duration={1500}>
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.PROCEDURE}</h3>
-            <p id='contentStyle'>{'To be update full pdf file with step procedures'}</p>
+            <Row>
+                <div className='pdfView'>
+                    <p id='contentStyle'>{'Need to update full pdf view with step procedures'}</p>
+                </div>
+            </Row>
         </Fade>
     );
 
@@ -80,7 +86,7 @@ export default class Instruction extends Component {
             if (i % 2 === 0) {
                 currentItem = <Fade bottom duration={2000}><Row className='rowView'><Col id='text' sm={6}>{currentText}</Col><Col sm={6}>{currentImage}</Col></Row></Fade>;
             } else {
-                currentItem = <Fade bottom duration={2000}><Row className='rowView'><Col sm={6}>{currentImage}</Col><Col id='text' sm={6}>{currentText}</Col></Row></Fade>;
+                currentItem = <Fade bottom duration={2000}s><Row className='rowView'><Col sm={6}>{currentImage}</Col><Col id='text' sm={6}>{currentText}</Col></Row></Fade>;
             }
             lists.push(currentItem);
         };

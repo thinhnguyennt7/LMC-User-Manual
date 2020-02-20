@@ -27,6 +27,19 @@
                 }
             }
         }
+
+        .pdfView {
+            background-color: $card-bg-color;
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 2.5%;
+
+            // Remove these after add pdf
+            text-align: center;
+            color: red;
+        }
     }
 
     .threedView {

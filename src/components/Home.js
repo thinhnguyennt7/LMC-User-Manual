@@ -8,7 +8,7 @@ import '../styles/Home.scss';
 
 export default class Home extends Component {
 
-    bannerView = () => <img className={'bannerSpec'} src={recycleImage}></img>
+    bannerView = () => <img alt='recycle' className={'bannerSpec'} src={recycleImage}></img>;
 
     welcomeMessage = () => (
         <div className='welcomeMessageView'>
@@ -22,10 +22,15 @@ export default class Home extends Component {
         <Fade top delay={800}>
             <ReactTypingEffect
                 className='solutionQuote'
-                speed='200'
-                eraseDelay='2000'
-                typingDelay='1200'
-                text={[TEXT.HOME_PAGE.FIRST_TEXT, TEXT.HOME_PAGE.SECOND_TEXT]}
+                speed='150'
+                eraseDelay='500'
+                typingDelay='1000'
+                text={[
+                    TEXT.HOME_PAGE.FIRST_TEXT,
+                    TEXT.HOME_PAGE.SECOND_TEXT,
+                    TEXT.HOME_PAGE.THIRD_TEXT,
+                    TEXT.HOME_PAGE.FOURTH_TEXT
+                ]}
             />
         </Fade>
     );

@@ -11,4 +11,25 @@
             text-align: center;
         }
     }
+
+    .content {
+
+        .center {
+            text-align: center;
+        }
+
+        .sketch {
+            // Remove these after add pdf
+            text-align: center;
+            font-size: 4.0vw;
+            font-weight: bold;
+            color: red;
+
+            margin: 0 auto;
+            background-color: $card-bg-color;
+            height: 100%;
+            width: 85%;
+            border-radius: 8px;
+        }
+    }
 }
