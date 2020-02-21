@@ -9,7 +9,6 @@
 
     .membersView {
         width: 100%;
-        height: 600px;
         background-color: $card-bg-color;
         margin-top: 3%;
         border-radius: 5px;
@@ -20,7 +19,6 @@
             margin-left: 0.2%;
             .styleColumn {
                 background-color: $orange-color;
-                height: 600px;
             }
 
             .roundCorner {
@@ -30,7 +28,7 @@
             & #name {
                 font-size: 2.2vw;
                 font-weight: bold;
-                margin-top: 30%;
+                margin-top: 15%;
                 margin-bottom: 10%;
             }
 
@@ -41,6 +39,7 @@
 
             & #year {
                 font-size: 1.8vw;
+                margin-bottom: 15%;
             }
 
             & #profilePic {
