@@ -4,6 +4,7 @@ import { Row } from 'react-bootstrap';
 import TEXT from '../en_us.json';
 import '../styles/Technical.scss';
 import '../index.scss';
+import SketchModel from '../assets/model.png'
 
 export default class Technical extends Component {
     constructor(props) {
@@ -25,7 +26,7 @@ export default class Technical extends Component {
                 <p className='center' id='contentStyle'>{TEXT.TECHNICAL.APPROACH}</p>
                 <Row>
                     <div className='sketch'>
-                        <p>SKETCH DRAFT NEED TO ADD HERE</p>
+                        <img src={SketchModel} alt="SKETCH MODEL"></img>
                     </div>
                 </Row>
             </Fade>
