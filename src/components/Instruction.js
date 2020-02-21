@@ -5,7 +5,6 @@ import { STLViewer } from 'react-stl-obj-viewer';
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
-import FileUrl from 'file-url';
 
 export default class Instruction extends Component {
     constructor(props) {
