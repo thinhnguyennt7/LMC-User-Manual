@@ -14,16 +14,18 @@
         }
 
         .proceduresView {
-            margin-top: 5%;
-
+            margin-top: -7%;
             .rowView {
                 margin-top: 8%;
+                font-size: 2.0vw;
                 & #text {
                     font-size: 2.0vw;
                 }
 
-                & #image {
-                    margin: 0 auto;
+                .imageSpec {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
                 }
             }
         }

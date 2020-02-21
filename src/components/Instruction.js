@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
-import { STLViewer } from 'react-stl-obj-viewer';
+// import { STLViewer } from 'react-stl-obj-viewer';
+import {OBJModel, MTLModel} from 'react-3d-viewer'
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
 import manual from '../assets/user-manual.png';
+import facility from '../assets/facility.obj';
+import facilityPic from '../assets/facility.png';
+import trashBin from '../assets/trash_bin.png';
+import boxPic from '../assets/box.png';
+import visionPic from '../assets/vision.png';
+import pipePic from '../assets/pipe.png';
 
 export default class Instruction extends Component {
     constructor(props) {
@@ -24,25 +31,27 @@ export default class Instruction extends Component {
         return reader.readAsArrayBuffer(file);
     }
 
+    // <STLViewer
+    //     className='threedView'
+    //     url='https://bohdanbirdie.github.io/stl-obj-demo/bottle.stl'
+    //     modelColor="#FFC58A"
+    //     width={600} height={600}
+    //     backgroundColor='#121212'
+    //     orbitControls={true}
+    //     rotate={true}
+    //     rotationSpeeds={[0.01, 0.01, 0]}
+    // />
+
     threeDView = () => (
         <Row>
-            <STLViewer
-                className='threedView'
-                url='https://bohdanbirdie.github.io/stl-obj-demo/bottle.stl'
-                modelColor="#FFC58A"
-                width={600} height={600}
-                backgroundColor='#121212'
-                orbitControls={true}
-                rotate={true}
-                rotationSpeeds={[0.01, 0.01, 0]}
-            />
+            <OBJModel src={facility} />
         </Row>
     );
 
     threeDModelView = () => (
         <Fade bottom duration={1500} >
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.THREE_D}</h3>
-            <p style={{fontSize: 30, textAlign: 'center', marginTop: '10%'}}>Coming Soon</p>
+            <this.threeDView />
         </Fade>
     );
 
@@ -58,32 +67,49 @@ export default class Instruction extends Component {
     generateListOfSteps = () => {
         let lists = [];
         let currentItem = null;
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 5; i++) {
             let currentText = null;
-            let currentImage = 'To be update 3D image';
+            let currentImage = null;
             switch(i) {
                 case 0:
                     currentText = TEXT.INSTRUCTION.COLLECT_TRASH;
+                    currentImage = trashBin;
                     break;
                 case 1:
                     currentText = TEXT.INSTRUCTION.CLASSIFICATION;
+                    currentImage = visionPic;
                     break;
                 case 2:
                     currentText = TEXT.INSTRUCTION.PRE_PROCESSING;
+                    currentImage = boxPic;
                     break;
                 case 3:
                     currentText = TEXT.INSTRUCTION.TRANSPORTATION;
-                    break;
-                case 4:
-                    currentText = TEXT.INSTRUCTION.FACILITY;
+                    currentImage = pipePic;
                     break;
                 default:
-                    currentText = TEXT.INSTRUCTION.FINAL_PRODUCT;
+                    currentText = TEXT.INSTRUCTION.FACILITY;
+                    currentImage = facilityPic;
+                    break;
             }
             if (i % 2 === 0) {
-                currentItem = <Fade bottom duration={2000}><Row className='rowView'><Col id='text' sm={6}>{currentText}</Col><Col sm={6}>{currentImage}</Col></Row></Fade>;
+                currentItem = <Fade bottom duration={2000}>
+                    <Row className='rowView'>
+                        <Col id='text' sm={6}>{currentText}</Col>
+                        <Col sm={6}>
+                            <img alt='imageSpec' className='imageSpec' src={currentImage}></img>
+                        </Col>
+                    </Row>
+                </Fade>;
             } else {
-                currentItem = <Fade bottom duration={2000}s><Row className='rowView'><Col sm={6}>{currentImage}</Col><Col id='text' sm={6}>{currentText}</Col></Row></Fade>;
+                currentItem = <Fade bottom duration={2000}>
+                    <Row className='rowView'>
+                        <Col sm={6}>
+                            <img className='imageSpec' alt='images' src={currentImage}></img>
+                        </Col>
+                        <Col id='text' sm={6}>{currentText}</Col>
+                    </Row>
+                </Fade>;
             }
             lists.push(currentItem);
         };
@@ -120,7 +146,6 @@ export default class Instruction extends Component {
                     <this.solutionView />
                     <this.presOperationView />
                     <this.procedures />
-                    <this.threeDModelView />
                     <this.instructionStepView />
                 </div>
             </div>
