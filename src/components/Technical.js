@@ -1,10 +1,11 @@
 import React,  { Component } from 'react';
 import { Fade } from 'react-reveal';
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import TEXT from '../en_us.json';
 import '../styles/Technical.scss';
 import '../index.scss';
-import SketchModel from '../assets/model.png'
+import SketchModel from '../assets/model.png';
+import SketchModel1 from '../assets/model1.png'
 
 export default class Technical extends Component {
     constructor(props) {
@@ -24,10 +25,13 @@ export default class Technical extends Component {
             <Fade bottom duration={2000}>
                 <h3 id='headerTitle'>{TEXT.TECHNICAL.SECTION_TITLE}</h3>
                 <p className='center' id='contentStyle'>{TEXT.TECHNICAL.APPROACH}</p>
-                <Row>
-                    <div className='sketch'>
-                        <img src={SketchModel} alt="SKETCH MODEL"></img>
-                    </div>
+                <Row className='sketchView'>
+                    <Col sm={6}>
+                        <img className='modelSketch' src={SketchModel} alt="SKETCH MODEL1"></img>
+                    </Col>
+                    <Col sm={6}>
+                        <img className='modelSketch' src={SketchModel1} alt="SKETCH MODEL2"></img>
+                    </Col>
                 </Row>
             </Fade>
         </div>

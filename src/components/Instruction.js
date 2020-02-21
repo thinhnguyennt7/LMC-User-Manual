@@ -29,7 +29,6 @@ export default class Instruction extends Component {
             <STLViewer
                 className='threedView'
                 url='https://bohdanbirdie.github.io/stl-obj-demo/bottle.stl'
-                // file={this.handleFiles('../assets/facility.STL')}
                 modelColor="#FFC58A"
                 width={600} height={600}
                 backgroundColor='#121212'
@@ -43,7 +42,7 @@ export default class Instruction extends Component {
     threeDModelView = () => (
         <Fade bottom duration={1500} >
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.THREE_D}</h3>
-            <this.threeDView/>
+            <p style={{fontSize: 30, textAlign: 'center', marginTop: '10%'}}>Coming Soon</p>
         </Fade>
     );
 

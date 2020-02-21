@@ -1,7 +1,6 @@
 @import '../index';
 
 .technicalView {
-
     .backgroundView {
         margin: 18% 10% 0% 10%;
         & #quote {
@@ -13,23 +12,18 @@
     }
 
     .content {
-
         .center {
             text-align: center;
         }
 
-        .sketch {
-            // Remove these after add pdf
-            text-align: center;
-            font-size: 4.0vw;
-            font-weight: bold;
-            color: red;
-
+        .sketchView {
             margin: 0 auto;
-            background-color: $card-bg-color;
-            height: 100%;
-            width: 85%;
-            border-radius: 8px;
+            .modelSketch {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
         }
     }
 }
