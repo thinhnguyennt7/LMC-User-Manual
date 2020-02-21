@@ -5,7 +5,7 @@ import { STLViewer } from 'react-stl-obj-viewer';
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
-import FileUrl from 'file-url';
+import manual from '../assets/user-manual.png';
 
 export default class Instruction extends Component {
     constructor(props) {
@@ -51,9 +51,7 @@ export default class Instruction extends Component {
         <Fade bottom duration={1500}>
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.PROCEDURE}</h3>
             <Row>
-                <div className='pdfView'>
-                    <p id='contentStyle'>{'Need to update full pdf view with step procedures'}</p>
-                </div>
+                <img alt='userManual' className='manual' src={manual}></img>
             </Row>
         </Fade>
     );
