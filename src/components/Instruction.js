@@ -127,7 +127,7 @@ export default class Instruction extends Component {
     solutionView = () => (
         <Fade bottom duration={2000}>
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.FIRST_TITLE}</h3>
-            <p id='contentStyle'>{TEXT.INSTRUCTION.SOLUTION}</p>
+            <p id='solutionStyle'>{TEXT.INSTRUCTION.SOLUTION}</p>
         </Fade>
     );
 
