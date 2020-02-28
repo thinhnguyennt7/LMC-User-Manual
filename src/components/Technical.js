@@ -8,6 +8,7 @@ import SketchModel from '../assets/model.png';
 import SketchModel1 from '../assets/model1.png'
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
+import Trash from '../assets/trash.png';
 
 export default class Technical extends Component {
     constructor(props) {
@@ -395,6 +396,7 @@ export default class Technical extends Component {
     PieChartTrashData = () => (
         <div style={{marginTop: '10%'}} className='chartWidth'>
             <HighchartsReact highcharts={Highcharts} options={this.pieOptions}/>
+            <img className='trashImgSpec' src={Trash}/>
         </div>
     );
 

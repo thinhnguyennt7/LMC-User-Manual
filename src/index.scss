@@ -1,6 +1,7 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import '~video-react/styles/scss/video-react';
 
 // Color Variables
@@ -11,9 +12,10 @@ $white-color: #FFFFFF;
 $comment-txt-color: #F2F2F2;
 
 // Font Variables
-$passion-one: 'Passion One', cursive;
-$pragati-narrow: 'Pragati Narrow', sans-serif;
-
+// $passion-one: 'Passion One', cursive;
+// $pragati-narrow: 'Pragati Narrow', sans-serif;
+$pragati-narrow: 'Open San', sans-serif;
+$passion-one: 'Open San', sans-serif;
 body {
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
@@ -28,23 +30,24 @@ body {
   .content {
     margin-left: 12%;
     & #headerTitle {
-      font-size: 1.8vw;
+      font-size: 2.0vw;
       font-weight: bold;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.3rem;
       margin-top: 10%;
       font-family: $pragati-narrow;
     }
 
     & #contentStyle {
-      margin-top: 1%;
+      margin-top: 2%;
       font-weight: normal;
-      font-size: 4.0vw;
+      font-size: 3.8vw;
     }
 
     & #contentStyle1 {
+      margin-top: 2%;
       font-weight: normal;
       letter-spacing: 0.1rem;
-      font-size: 4.0vw;
+      font-size: 3.8vw;
     }
   }
 }
