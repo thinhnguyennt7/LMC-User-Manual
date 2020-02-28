@@ -9,9 +9,27 @@
         margin: 18% 10% 0% 10%;
         & #quote {
             font-size: 4.8vw;
-            margin-top: 10%;
-            font-weight: bold;
+            margin-top: 2%;
+            font-weight: normal;
             text-align: center;
+        }
+
+        & #quote1 {
+            font-size: 3.0vw;
+            margin-top: 2%;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        & #headerTitle {
+            font-size: 1.8vw;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            font-family: $pragati-narrow;
+        }
+
+        .chartWidth {
+            width: 100%;
         }
     }
 

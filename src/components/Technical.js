@@ -59,15 +59,12 @@ export default class Technical extends Component {
             chart: {
                 type: 'pie',
                 backgroundColor: 'transparent',
-                height: '700px'
+                height: '40%',
             },
             credits: false,
             title: {
-                text: 'Global Wastes Processing',
-                style: {
-                    color: '#ffffff',
-                    fontSize: 35
-                }
+                text: '',
+                verticalAlign: 'top'
             },
             xAxis: {
                 labels: {
@@ -354,20 +351,20 @@ export default class Technical extends Component {
 
     quoteTextView = () => (
         <div className='backgroundView'>
-            <Row>
-                <Col sm={6}>
-                    <HighchartsReact highcharts={Highcharts} options={this.pie2Options}/>
-                </Col>
-                <Col sm={6}>
-                    <Fade bottom duration={2000}><h2 id='quote'>{TEXT.TECHNICAL.FIRST_QUOTE}</h2></Fade>
-                </Col>
-            </Row>
-            <Fade bottom duration={2500}><h2 id='quote'>{TEXT.TECHNICAL.SECOND_QUOTE}</h2></Fade>
-            <div className='garbage-charts'>
-                <Fade bottom duration={2500}>
-                    <this.trashData/>
-                </Fade>
-            </div>
+            <Fade bottom duration={2000}>
+                <h3 id='headerTitle'>{TEXT.TECHNICAL.PIECHART_TITLE}</h3>
+                <Row style={{marginTop: '4%'}}>
+                    <Col sm={8}>
+                        <HighchartsReact className='pieChartSpec' highcharts={Highcharts} options={this.pie2Options}/>
+                    </Col>
+                    <Col sm={4}>
+                        <h2 id='quote1'>{TEXT.TECHNICAL.FIRST_QUOTE}</h2>
+                    </Col>
+                </Row>
+                <h2 style={{marginTop: '10%'}} id='quote'>{TEXT.TECHNICAL.SECOND_QUOTE}</h2>
+                <this.HorizontalTrashData />
+                <this.PieChartTrashData />
+            </Fade>
         </div>
 
     );
@@ -389,18 +386,15 @@ export default class Technical extends Component {
         </div>
     );
 
-    trashData = () => (
-        <div>
+    HorizontalTrashData = () => (
+        <div style={{marginTop: '5%'}} className='chartWidth'>
             <HighchartsReact highcharts={Highcharts} options={this.options}/>
-            <HighchartsReact highcharts={Highcharts} options={this.pieOptions}/>
         </div>
     );
 
-    chartView = () => (
-        <div style={{marginTop: '10%'}}>
-            <Fade bottom>
-                <h3 style={{textAlign: 'center'}}>{'Chart will be insert here'}</h3>
-            </Fade>
+    PieChartTrashData = () => (
+        <div style={{marginTop: '10%'}} className='chartWidth'>
+            <HighchartsReact highcharts={Highcharts} options={this.pieOptions}/>
         </div>
     );
 
