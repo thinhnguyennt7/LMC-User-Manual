@@ -359,10 +359,10 @@ export default class Technical extends Component {
                     <HighchartsReact highcharts={Highcharts} options={this.pie2Options}/>
                 </Col>
                 <Col sm={6}>
-                    <Fade bottom duration={2000}><h1 id='quote'>{TEXT.TECHNICAL.FIRST_QUOTE}</h1></Fade>
+                    <Fade bottom duration={2000}><h2 id='quote'>{TEXT.TECHNICAL.FIRST_QUOTE}</h2></Fade>
                 </Col>
             </Row>
-            <Fade bottom duration={2500}><h1 id='quote'>{TEXT.TECHNICAL.SECOND_QUOTE}</h1></Fade>
+            <Fade bottom duration={2500}><h2 id='quote'>{TEXT.TECHNICAL.SECOND_QUOTE}</h2></Fade>
             <div className='garbage-charts'>
                 <Fade bottom duration={2500}>
                     <this.trashData/>
