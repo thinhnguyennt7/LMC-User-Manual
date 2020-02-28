@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
-import {OBJModel, MTLModel} from 'react-3d-viewer'
 import { Player } from 'video-react';
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
 import manual from '../assets/user-manual.png';
-import facility from '../assets/facility.obj';
 import facilityPic from '../assets/facility1.png';
 import trashBin from '../assets/trash_bin.png';
 import boxPic from '../assets/box.png';
@@ -33,30 +31,6 @@ export default class Instruction extends Component {
         const reader = new FileReader();
         return reader.readAsArrayBuffer(file);
     }
-
-    // <STLViewer
-    //     className='threedView'
-    //     url='https://bohdanbirdie.github.io/stl-obj-demo/bottle.stl'
-    //     modelColor="#FFC58A"
-    //     width={600} height={600}
-    //     backgroundColor='#121212'
-    //     orbitControls={true}
-    //     rotate={true}
-    //     rotationSpeeds={[0.01, 0.01, 0]}
-    // />
-
-    threeDView = () => (
-        <Row>
-            <OBJModel src={facility} />
-        </Row>
-    );
-
-    threeDModelView = () => (
-        <Fade bottom duration={1500} >
-            <h3 id='headerTitle'>{TEXT.INSTRUCTION.THREE_D}</h3>
-            <this.threeDView />
-        </Fade>
-    );
 
     instructionStepView = () => (
         <Fade bottom duration={1500}>
