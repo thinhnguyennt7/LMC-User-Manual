@@ -30,7 +30,6 @@ export default class Technical extends Component {
             927.97,
         ]
         const total = vals.reduce((prev, curr) => prev + curr)
-        console.log(total)
         const names = [
             'Aluminum',
             'Cardboard',
@@ -56,6 +55,83 @@ export default class Technical extends Component {
                 }
             )
         }
+        this.pie2Options = {
+            chart: {
+                type: 'pie',
+                backgroundColor: 'transparent',
+                height: '700px'
+            },
+            credits: false,
+            title: {
+                text: 'Global Wastes Processing',
+                style: {
+                    color: '#ffffff',
+                    fontSize: 35
+                }
+            },
+            xAxis: {
+                labels: {
+                    style: {
+                        color: '#ffffff',
+                    }
+                },
+                title: {
+                    style: {
+                        color: '#ffffff',
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                labels: {
+                    style: {
+                        color: '#ffffff',
+                    }
+                },
+                title: {
+                    text: '',
+                    style: {
+                        color: '#ffffff',
+                    }
+                }
+            },
+            legend: {
+                style: {
+                    color: '#ffffff'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total wastes<br/>'
+            },
+
+            series: [
+                {
+                    name: "Global Wastes",
+                    dataLabels: {
+                        style: {
+                            fontSize: 18,
+                            color: '#ffffff'
+                        }
+                    },
+                    colorByPoint: true,
+                    data: [
+                        {
+                            name: 'Discarded Wastes',
+                            y: 55
+                        },
+                        {
+                            name: 'Incinerated Wastes',
+                            y: 25
+                        },
+                        {
+                            name: 'Recyled Wastes',
+                            y: 20
+                        }
+                    ]
+                }
+            ],
+        };
         this.pieOptions = {
             chart: {
                 type: 'pie',
@@ -278,7 +354,14 @@ export default class Technical extends Component {
 
     quoteTextView = () => (
         <div className='backgroundView'>
-            <Fade bottom duration={2000}><h1 id='quote'>{TEXT.TECHNICAL.FIRST_QUOTE}</h1></Fade>
+            <Row>
+                <Col sm={6}>
+                    <HighchartsReact highcharts={Highcharts} options={this.pie2Options}/>
+                </Col>
+                <Col sm={6}>
+                    <Fade bottom duration={2000}><h1 id='quote'>{TEXT.TECHNICAL.FIRST_QUOTE}</h1></Fade>
+                </Col>
+            </Row>
             <Fade bottom duration={2500}><h1 id='quote'>{TEXT.TECHNICAL.SECOND_QUOTE}</h1></Fade>
             <div className='garbage-charts'>
                 <Fade bottom duration={2500}>
