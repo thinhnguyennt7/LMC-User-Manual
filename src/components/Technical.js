@@ -396,7 +396,7 @@ export default class Technical extends Component {
     PieChartTrashData = () => (
         <div style={{marginTop: '10%'}} className='chartWidth'>
             <HighchartsReact highcharts={Highcharts} options={this.pieOptions}/>
-            <img className='trashImgSpec' src={Trash}/>
+            <img alt='trashbin' className='trashImgSpec' src={Trash}/>
         </div>
     );
 

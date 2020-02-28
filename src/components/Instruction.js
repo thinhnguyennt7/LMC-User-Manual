@@ -4,6 +4,7 @@ import { Fade } from 'react-reveal';
 import { Player } from 'video-react';
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
+import YouTube from 'react-youtube';
 import '../styles/Instruction.scss';
 import manual from '../assets/user-manual.png';
 import facilityPic from '../assets/facility1.png';
@@ -24,13 +25,6 @@ export default class Instruction extends Component {
     cycleDiagramView = () => (
         <img className='cycle-chart' src={Cycle} alt={TEXT.INSTRUCTION.ALT}></img>
     );
-
-    handleFiles = filePath => {
-        const parts = [new Blob([filePath], {type: 'file'}), new Uint16Array([33])];
-        const file = new File(parts, 'test.STL', {type:"file"});
-        const reader = new FileReader();
-        return reader.readAsArrayBuffer(file);
-    }
 
     instructionStepView = () => (
         <Fade bottom duration={1500}>
@@ -129,12 +123,11 @@ export default class Instruction extends Component {
             </Row>
 
             <h3 id='headerTitle' style={{marginTop: '-10%'}}>{TEXT.INSTRUCTION.VIDEO}</h3>
-            <Player
-                className='videoSpec'
-                playsInline
-                poster={marketPlace1}
-                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-            />
+            <div className='videoView'>
+                <iframe title="instruction" id="videoSpec" align="middle"
+                    src="https://www.youtube.com/embed/4lqh1UsLfug">
+                </iframe>
+            </div>
         </Fade>
     );
 
@@ -152,3 +145,8 @@ export default class Instruction extends Component {
         );
     }
 }
+
+const opts = {
+    height: '400',
+    width: '640',
+};
