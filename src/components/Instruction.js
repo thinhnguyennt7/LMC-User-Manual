@@ -8,7 +8,7 @@ import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
 import manual from '../assets/user-manual.png';
 import facility from '../assets/facility.obj';
-import facilityPic from '../assets/facility.png';
+import facilityPic from '../assets/facility1.png';
 import trashBin from '../assets/trash_bin.png';
 import boxPic from '../assets/box.png';
 import visionPic from '../assets/vision.png';
