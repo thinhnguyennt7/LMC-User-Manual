@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
-// import { STLViewer } from 'react-stl-obj-viewer';
 import {OBJModel, MTLModel} from 'react-3d-viewer'
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
@@ -127,7 +126,10 @@ export default class Instruction extends Component {
     solutionView = () => (
         <Fade bottom duration={2000}>
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.FIRST_TITLE}</h3>
-            <p id='solutionStyle'>{TEXT.INSTRUCTION.SOLUTION}</p>
+            <p id='contentStyle'>{TEXT.INSTRUCTION.SOLUTION1}</p>
+
+            <h3 id='headerTitle'>{TEXT.INSTRUCTION.SECOND_TITLE}</h3>
+            <p id='contentStyle1'>{TEXT.INSTRUCTION.SOLUTION2}</p>
         </Fade>
     );
 

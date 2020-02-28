@@ -29,22 +29,21 @@ body {
     & #headerTitle {
       font-size: 1.8vw;
       font-weight: bold;
-      letter-spacing: 0.3rem;
+      letter-spacing: 0.1rem;
       margin-top: 10%;
       font-family: $pragati-narrow;
     }
 
     & #contentStyle {
       margin-top: 1%;
-      font-weight: bold;
+      font-weight: normal;
       font-size: 4.0vw;
     }
 
-    & #solutionStyle {
-      margin-top: 1%;
+    & #contentStyle1 {
       font-weight: normal;
       letter-spacing: 0.1rem;
-      font-size: 2.0vw;
+      font-size: 4.0vw;
     }
   }
 }
