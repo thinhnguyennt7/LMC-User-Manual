@@ -19,7 +19,8 @@
     "react-scripts": "3.3.0",
     "react-scroll-up-button": "^1.6.4",
     "react-stl-obj-viewer": "^1.2.0",
-    "react-typing-effect": "^2.0.3"
+    "react-typing-effect": "^2.0.3",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
 import {OBJModel, MTLModel} from 'react-3d-viewer'
+import { Player } from 'video-react';
 import Cycle from '../assets/PReS-Cycle.png';
 import TEXT from '../en_us.json';
 import '../styles/Instruction.scss';
@@ -12,6 +13,9 @@ import trashBin from '../assets/trash_bin.png';
 import boxPic from '../assets/box.png';
 import visionPic from '../assets/vision.png';
 import pipePic from '../assets/pipe.png';
+import marketPlace0 from '../assets/marketplace0.png';
+import marketPlace1 from '../assets/maketplace1.png';
+import marketPlace2 from '../assets/maketplace2.png';
 
 export default class Instruction extends Component {
     constructor(props) {
@@ -92,7 +96,7 @@ export default class Instruction extends Component {
                     break;
             }
             if (i % 2 === 0) {
-                currentItem = <Fade bottom duration={2000}>
+                currentItem = <Fade bottom duration={1800}>
                     <Row className='rowView'>
                         <Col id='text' sm={6}>{currentText}</Col>
                         <Col sm={6}>
@@ -101,7 +105,7 @@ export default class Instruction extends Component {
                     </Row>
                 </Fade>;
             } else {
-                currentItem = <Fade bottom duration={2000}>
+                currentItem = <Fade bottom duration={1800}>
                     <Row className='rowView'>
                         <Col sm={6}>
                             <img className='imageSpec' alt='images' src={currentImage}></img>
@@ -124,7 +128,7 @@ export default class Instruction extends Component {
     };
 
     solutionView = () => (
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={1800}>
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.FIRST_TITLE}</h3>
             <p id='contentStyle'>{TEXT.INSTRUCTION.SOLUTION1}</p>
 
@@ -134,10 +138,29 @@ export default class Instruction extends Component {
     );
 
     presOperationView = () => (
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={1800}>
             <h3 id='headerTitle'>{TEXT.INSTRUCTION.PRES}</h3>
             <p id='contentStyle'>{TEXT.INSTRUCTION.PROGRESS}</p>
             <this.cycleDiagramView />
+        </Fade>
+    );
+
+    VideoAndMarketPlace = () => (
+        <Fade bottom duration={1800}>
+            <h3 id='headerTitle'>{TEXT.INSTRUCTION.MARKETPLACE}</h3>
+            <Row className='marketPlace'>
+                <Col sm={4}><img alt='Market Space Model 0' src={marketPlace0} className='imageSpec' /></Col>
+                <Col sm={4}><img alt='Market Space Model 1' src={marketPlace1} className='imageSpec' /></Col>
+                <Col sm={4}><img alt='Market Space Model 2' src={marketPlace2} className='imageSpec' /></Col>
+            </Row>
+
+            <h3 id='headerTitle' style={{marginTop: '-10%'}}>{TEXT.INSTRUCTION.VIDEO}</h3>
+            <Player
+                className='videoSpec'
+                playsInline
+                poster={marketPlace1}
+                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+            />
         </Fade>
     );
 
@@ -148,6 +171,7 @@ export default class Instruction extends Component {
                     <this.solutionView />
                     <this.presOperationView />
                     <this.procedures />
+                    <this.VideoAndMarketPlace />
                     <this.instructionStepView />
                 </div>
             </div>
