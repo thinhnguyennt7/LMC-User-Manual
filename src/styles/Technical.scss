@@ -1,6 +1,10 @@
 @import '../index';
 
 .technicalView {
+    .garbage-charts {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
     .backgroundView {
         margin: 18% 10% 0% 10%;
         & #quote {
